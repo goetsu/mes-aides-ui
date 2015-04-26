@@ -47,16 +47,16 @@
         <img ng-src="/img/logo_assurance_maladie.png" alt="Assurance maladie">
       </div>
       <div class="col-md-2">
-        <img ng-src="/img/logo_ass.png" alt="ASS">
+        <img ng-src="/img/logo_ass.png" alt="Pôle emploi">
       </div>
       <div class="col-md-2">
-        <img ng-src="/img/logo_aspa.png" alt="ASPA">
+        <img ng-src="/img/logo_aspa.png" alt="Assurance retraite">
       </div>
       <div class="col-md-2">
-        <img ng-src="/img/logo_caf.png" alt="CAF">
+        <img ng-src="/img/logo_caf.png" alt="Allocations familiales">
       </div>
       <div class="col-md-2">
-        <img ng-src="/img/logo_education_nationale.png" alt="ASPA">
+        <img ng-src="/img/logo_education_nationale.png" alt="Éducation nationale">
       </div>
     </div>
   </div>
@@ -66,13 +66,13 @@
   <div class="frame-aides-homepage">
     <h2 class="text-center">Les aides simulées</h2>
     <hr>
-    <div class="row">
-      <div ng-repeat="droit in droits">
+    <div class="row" role="list">
+      <div ng-repeat="droit in droits" role="listitem">
         <div class="clearfix" ng-if="$index % 3 === 0"></div>
         <div class="col-md-4">
           <div class="row heading">
             <div class="col-xs-2">
-              <img ng-src="/img/{{ droit.imgSrc }}" alt="{{ droit.id }}" style="width: 40px;">
+              <img ng-src="/img/{{ droit.imgSrc }}" alt="" style="width: 40px;">
             </div>
             <div class="col-xs-10">
               <h3>{{ droit.label }}</h3>
